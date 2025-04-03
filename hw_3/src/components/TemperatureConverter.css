@@ -1,0 +1,104 @@
+.temp-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #1a2027;
+  border-radius: 8px;
+  padding: 2rem;
+  max-width: 400px;
+  margin: 2rem auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.temp-title {
+  color: #90caf9;
+  margin-bottom: 1.5rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.temp-inputGroup {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.temp-inputField {
+  margin-bottom: 0.5rem;
+  width: 100%;
+}
+
+.temp-inputField .MuiInputBase-root {
+  color: #e0e0e0;
+}
+
+.temp-inputField .MuiInputLabel-root {
+  color: #90caf9;
+}
+
+.temp-inputField .MuiInput-underline:before {
+  border-bottom-color: #4f5b62;
+}
+
+.temp-inputField .MuiInput-underline:hover:not(.Mui-disabled):before {
+  border-bottom-color: #90caf9;
+}
+
+.temp-buttonGroup {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.temp-convertButton {
+  background-color: #3f51b5;
+  color: white;
+  padding: 0.5rem 1.5rem;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.temp-convertButton:hover {
+  background-color: #303f9f;
+}
+
+.temp-resetButton {
+  color: #90caf9;
+  border: 1px solid #4f5b62;
+  padding: 0.5rem 1.5rem;
+  border-radius: 4px;
+}
+
+.temp-resetButton:hover {
+  background-color: rgba(144, 202, 249, 0.08);
+}
+
+.temp-resultContainer {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  background-color: #263238;
+  border-radius: 4px;
+  width: 100%;
+  text-align: center;
+}
+
+.temp-resultText {
+  color: #e0e0e0;
+  font-size: 1.1rem;
+}
+
+@media (max-width: 480px) {
+  .temp-container {
+    padding: 1.5rem;
+    margin: 1rem;
+    width: calc(100% - 2rem);
+  }
+  
+  .temp-buttonGroup {
+    flex-direction: column;
+  }
+}

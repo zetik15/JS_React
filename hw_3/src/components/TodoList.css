@@ -1,0 +1,153 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #1a2027;
+    border-radius: 8px;
+    padding: 2rem;
+    width: 800px;
+    height: 600px;
+    max-width: 1000px;
+    max-height: 1000px;
+    margin: 2rem auto;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 1.5rem;
+}
+
+.inputField {
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+.inputField .MuiInputBase-root {
+    color: #e0e0e0;
+}
+
+.inputField .MuiInputLabel-root {
+    color: #90caf9;
+}
+
+.inputField .MuiInput-underline:before {
+    border-bottom-color: #4f5b62;
+}
+
+.inputField .MuiInput-underline:hover:not(.Mui-disabled):before {
+    border-bottom-color: #90caf9;
+}
+
+.buttonGroup {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 1.5rem;
+}
+
+.resetButton {
+    color: #90caf9;
+    border: 1px solid #4f5b62;
+    padding: 0.5rem 1.5rem;
+    border-radius: 4px;
+    transition: all 0.2s;
+}
+
+.addButton {
+    background-color: #3f51b5;
+    color: white;
+    padding: 0.5rem 1.5rem;
+    border-radius: 4px;
+    transition: all 0.2s;
+}
+
+.addButton:hover {
+    background-color: #303f9f;
+}
+
+.resetButton:hover {
+    background-color: rgba(144, 202, 249, 0.08);
+}
+
+.todoItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #263238;
+    border-radius: 4px;
+    padding: 0.75rem 1rem;
+    margin: 0.5rem 0;
+    width: 100%;
+    min-width: 0;
+    color: #e0e0e0;
+    transition: background-color 0.2s;
+    box-sizing: border-box;
+}
+
+.todoItem:hover {
+    background-color: #303f9f;
+}
+
+.todoText {
+    flex-grow: 1;
+    margin-right: 1rem;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.deleteIcon {
+    color: #f48fb1;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+.deleteIcon:hover {
+    color: #f06292;
+}
+
+.todoList {
+    width: 100%;
+    max-height: 800px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    margin-top: 1rem;
+    padding-right: 10px;
+    box-sizing: border-box;
+}
+
+.todoList::-webkit-scrollbar {
+    width: 6px;
+}
+
+.todoList::-webkit-scrollbar-track {
+    background: #1a2027;
+}
+
+.todoList::-webkit-scrollbar-thumb {
+    background: #4f5b62;
+    border-radius: 3px;
+}
+
+.todoList::-webkit-scrollbar-thumb:hover {
+    background: #90caf9;
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 1.5rem;
+        margin: 1rem;
+        width: calc(100% - 2rem);
+    }
+    
+    .buttonGroup {
+        flex-direction: column;
+    }
+    
+    .buttonGroup button {
+        margin: 0.25rem 0;
+    }
+}
