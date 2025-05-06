@@ -1,0 +1,119 @@
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+.sales__item {
+  background: #F8F8F8;
+  width: 360px;
+}
+
+.sales__product__img__container {
+  position: relative;
+}
+
+.sales__overlay__desktop__products {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+  opacity: 0;
+  transition: opacity .2s ease-in-out;
+}
+
+.sales__photo__products {
+  display: block;
+}
+
+.sales__product__img__container:hover .sales__overlay__desktop__products {
+  opacity: 0.8;
+}
+
+.sales__btn {
+  position: absolute;
+  top: calc(50% - 22px);
+  left: calc(50% - 69.5px); 
+  z-index: 20;
+  background: transparent;
+  opacity: 0;  
+  transition: all .2s ease-in-out;
+}
+
+.sales__product__img__container:hover .sales__overlay__desktop__products,
+.sales__product__img__container:hover .sales__btn {
+  opacity: 1;
+}
+
+.sales__btn:hover {
+  box-shadow: 4px 4px 8px rgba(0, 162, 255, 0.25);
+  transform: scale(1.05);
+}
+
+.sales__btn:active {
+  transform: scale(1.02);
+}
+
+.sales__btn__add {
+  border: 1px solid white;
+  background-color: transparent;
+  padding: 13px 14px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 17px;
+  color: white;
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  cursor: pointer;
+  transition: background-color .2s ease;
+}
+
+.sales__btn__add:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+}
+
+.sales__cart__icon {
+  width: 26px;
+  height: 24px;
+}
+
+.sales__name {
+  padding-left: 16px;
+  padding-top: 24px;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+.sales__desc {
+  padding-left: 16px;
+  margin-top: 16px;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 17px;
+  color: #5D5D5D;
+  text-align: left;
+  width: 315px;
+}
+
+.sales__price {
+  padding-left: 16px;
+  margin-top: 16px;
+  padding-bottom: 24px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  color: #F16D7F;
+}
+
+@media (max-width: 1024px) {
+  .center {
+    padding-left: calc(50% - 376px);
+    padding-right: calc(50% - 376px);
+  }
+
+  .sales {
+    margin-bottom: 32px;
+  }
+}
